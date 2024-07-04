@@ -75,10 +75,10 @@ Scan the QR code with the Expo Go app on your mobile device, or run the app on a
 
 ## Screenshots
 
-<img src="https://i.imgur.com/eW4YtSO.jpeg" alt="Home Screen" width="444" height="960">
-<img src="https://i.imgur.com/fPSUfW7.jpeg" alt="Add Product Screen" width="444" height="960">
-<img src="https://i.imgur.com/hsxTJUR.jpeg" alt="Add Details Screen" width="444" height="960">
-<img src="https://i.imgur.com/UOaRBr6.jpeg" alt="Add Action Input Date" width="444" height="960">
+<img src="https://i.imgur.com/eW4YtSO.jpeg" alt="Home Screen" width="222" height="480">
+<img src="https://i.imgur.com/fPSUfW7.jpeg" alt="Add Product Screen" width="222" height="480">
+<img src="https://i.imgur.com/hsxTJUR.jpeg" alt="Add Details Screen" width="222" height="480">
+<img src="https://i.imgur.com/UOaRBr6.jpeg" alt="Add Action Input Date" width="222" height="480">
 
 ## Example of a Styled Section
 

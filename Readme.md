@@ -17,7 +17,7 @@ Finance App is a React Native application designed to manage financial products.
 
 This application allows users to manage financial products, including adding new products, viewing details, editing, and deleting them. It is built using React Native and Expo, and follows modern React development practices.
 
-:exclamation: ***Nota:*** Esta aplicación está en fase de desarrollo y puede contener errores.
+:exclamation: ***Nota:*** This application is under development and may contain errors.
 
 ## Features
 

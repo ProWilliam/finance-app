@@ -1,13 +1,18 @@
 import { useState } from 'react';
-import { View, Button } from 'react-native';
+import { View, Platform, Text, TouchableOpacity } from 'react-native';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
+import { FormatingDate } from '../../utils/formatingDate';
 
-// Type
+// Type and Styles.
+import styles from './InputDate.style';
 import DateProps from '../../types/components/InputDate.types';
 
-const InputDate: React.FC<DateProps> = ({ title, keyValue, onChangeForm, value }) => {
-  const [date, setDate] = useState(new Date());
 
+
+const InputDate: React.FC<DateProps> = ({ title, keyValue, onChangeForm, value }) => {
+
+  const [dateWeb, setDateWeb] = useState('2026-08-22')
+  
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
   const [buttonTitle, setButtonTitle] = useState<string>(title);
 
@@ -19,12 +24,15 @@ const InputDate: React.FC<DateProps> = ({ title, keyValue, onChangeForm, value }
     setDatePickerVisibility(false);
   };
 
-  const handleConfirm = (date: any) => {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0'); 
-    const day = String(date.getDate()).padStart(2, '0');
+  const onDateWeb = (event: any) => {
+    const dateFormWeb = event.target.value;
 
-    const dateFormat = `${year}-${month}-${day}`;
+    onChangeForm(keyValue, dateFormWeb);
+    setDateWeb(dateFormWeb)
+  }
+
+  const handleConfirm = (date: any) => {
+    const dateFormat = FormatingDate(date);
 
     onChangeForm(keyValue, dateFormat);
     setButtonTitle(dateFormat);
@@ -33,13 +41,35 @@ const InputDate: React.FC<DateProps> = ({ title, keyValue, onChangeForm, value }
 
   return (
     <View>
-      <Button title={ value || buttonTitle} onPress={showDatePicker} />
-      <DateTimePickerModal
-        isVisible={isDatePickerVisible}
-        mode="date"
-        onConfirm={handleConfirm}
-        onCancel={hideDatePicker}
-      />
+      { Platform.OS == 'web' && (
+        <input
+          style={styles.inputWeb}
+          type="date"
+          value={dateWeb}
+          onChange={onDateWeb}
+        />
+      )}
+      { Platform.OS != 'web' && (
+        <View>
+          <TouchableOpacity
+            style={styles.container}
+            onPress={showDatePicker}
+          >
+            <Text
+              style={styles.textInput}
+            >
+              {value || buttonTitle}
+            </Text>
+          </TouchableOpacity>
+          <DateTimePickerModal
+            isVisible={isDatePickerVisible}
+            mode="date"
+            onConfirm={handleConfirm}
+            onCancel={hideDatePicker}
+          />
+        </View>
+        
+      )}
     </View>
   );
 };

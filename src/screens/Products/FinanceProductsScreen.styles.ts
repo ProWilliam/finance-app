@@ -3,11 +3,11 @@ import theme from '../../theme/theme';
 
 const StylesFinanceProducts = StyleSheet.create({
   container: {
-    marginBottom: 20,
+    paddingBottom: 20,
     flex: 1,
     justifyContent: 'center',
     alignItems: "center",
-    backgroundColor: '#fefefe',
+    backgroundColor: theme.light.primary,
   },
   title: {
     fontSize: 24,

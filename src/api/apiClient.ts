@@ -19,13 +19,11 @@ const apiClient = async (endpoint: string, options?: FetchOptions) => {
   return globalThis.fetch(`${API_URL}${endpoint}`, config)
     .then(response => {
       if (!response.ok) {
-        console.error('Error:', response.statusText);
         throw new Error(`Error: ${response.statusText}`);
       }
       return response.json();
     })
     .catch(error => {
-      console.error('API Client Error:', error);
       throw error;
     });
 

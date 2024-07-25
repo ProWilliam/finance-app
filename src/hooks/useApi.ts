@@ -16,7 +16,7 @@ const useApi = (endpoint: string, options?: FetchOptions) => {
       setLoading(true);
       try {
         const result = await apiClient(endpoint, options);
-      setData(result);
+        setData(result);
       } catch (err) {
         setError(err as Error);
       } finally {

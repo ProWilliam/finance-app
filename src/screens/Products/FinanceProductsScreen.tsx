@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
 
-// Hook
+// Hook and Context
 import useApi from '../../hooks/useApi';
+import { useMyContextProduct } from '../../context/ProductContext';
 
 // Components
 import SearchInput from '../../components/SearchInput/SearchInput';
@@ -17,6 +18,13 @@ import config from '../../../app.config';
 const FinanceProducts: React.FC = () => {
 
   const { data, loading } = useApi(config.extra.productUrl);
+  const { setProducts } = useMyContextProduct();
+
+  useEffect(() => {
+    if (data && data.data.length > 0 ){
+      setProducts(data.data);
+    }
+  }, [data, setProducts]);
 
   return (
     <View style={stylesHome.container}>
@@ -24,7 +32,7 @@ const FinanceProducts: React.FC = () => {
       {
         loading
         ? <Text>Loading...</Text>
-        : <ListFinancialProduct {...data} />
+        : <ListFinancialProduct />
       }
       <ButtonSubmit title='Agregar' color='send' navigationRoot={config.extra.rootAddProduct}/>
     </View>

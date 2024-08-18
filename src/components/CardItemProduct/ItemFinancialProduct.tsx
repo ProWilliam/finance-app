@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
 
+
+
 // Hook and Component
 import useAppNavigation from '../../hooks/useAppNavigation';
 import IconAngleRight from '../../assets/icons/IconAngleRight';
@@ -14,7 +16,7 @@ const ItemFinancialProduct: React.FC<ItemFinancialProductProps> = ({ id, name })
   const [route, setRoute] = useState('');
   const { appNavigation } = useAppNavigation();
 
-  appNavigation(route);
+  appNavigation(route, {id});
 
   return (
     <TouchableOpacity 

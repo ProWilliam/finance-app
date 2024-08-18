@@ -8,11 +8,11 @@ import { NavigationProps } from '../types/hook/useAppNavigator.types';
 const useAppNavigation = () => {
   const navigation = useNavigation<NavigationProps>();
 
-  const appNavigation = (route: string) => {
+  const appNavigation = (route: string, params?: {id: string}) => {
 
-    const resetToHome = StackActions.replace('Home');
-    const resetToInfo = StackActions.replace('Info');
-    const resetToAddProduct = StackActions.replace('AddProduct');
+    const resetToHome = StackActions.replace('Home', params);
+    const resetToInfo = StackActions.replace('Info', params);
+    const resetToAddProduct = StackActions.replace('AddProduct', params);
 
     useEffect(() => {
       if(route.includes('home')) {
@@ -29,7 +29,7 @@ const useAppNavigation = () => {
       // Reset state route.
       route = '';
 
-    }, [route, navigation])
+    }, [route, navigation, params])
   }
  
   return {

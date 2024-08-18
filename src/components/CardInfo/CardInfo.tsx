@@ -10,7 +10,7 @@ import RowText from '../../components/RowText/RowText';
 import styles from './CardInfo.styles';
 import CardInfoProps from '../../types/components/CardInfo.types'
 
-const CardInfo: React.FC<CardInfoProps> = ({id, infoText, name, description, logo, dataRelease, dataRevision}) => {
+const CardInfo: React.FC<CardInfoProps> = ({id, info_text, name, description, logo, date_release, date_revision}) => {
 
   const [route, setRoute] = useState('');
   const { appNavigation } = useAppNavigation();
@@ -26,7 +26,7 @@ const CardInfo: React.FC<CardInfoProps> = ({id, infoText, name, description, log
       <View style={styles.titleCard}>
         <View>
           <Text style={styles.textTitle}>ID:{id}</Text>
-          <Text>{infoText}</Text>
+          <Text>{info_text}</Text>
         </View>
         <TouchableOpacity
           onPress={goBack}
@@ -41,8 +41,8 @@ const CardInfo: React.FC<CardInfoProps> = ({id, infoText, name, description, log
           <Text>Logo:</Text>
           <Image style={styles.imageCard} source={{ uri: logo }} />
         </View>
-        <RowText title='Fecha liberación:'>{dataRelease.toDateString()}</RowText>
-        <RowText title='Fecha revisión:'>{dataRevision.toDateString()}</RowText>  
+        <RowText title='Fecha liberación:'>{date_release}</RowText>
+        <RowText title='Fecha revisión:'>{date_revision}</RowText>  
       </View>
     </View>
   )

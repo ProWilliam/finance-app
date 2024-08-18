@@ -1,9 +1,9 @@
 export default interface CardInfoProps {
   id: string, 
-  infoText: string, 
+  info_text: string, 
   name: string, 
   description: string, 
   logo: string, 
-  dataRelease: Date 
-  dataRevision: Date,
+  date_release: string,
+  date_revision: string,
 }

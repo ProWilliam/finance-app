@@ -1,9 +1,11 @@
 export default {
   extra: {
-    apiUrl: 'http://192.168.0.14:3002/',
-    productUrl: 'bp/products',
+    apiUrl: 'http://192.168.0.17:3002/',
+    productUrl: 'bp/products/',
     rootHome: 'home',
     rootInfo: 'info',
     rootAddProduct: 'addProduct',
+    infoText: "Informacion extra",
+    logo: "https://www.visa.com.ec/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Tarjetas/visa-signature-400x225.jpg"
   },
 };

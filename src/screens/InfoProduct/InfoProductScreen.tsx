@@ -2,15 +2,15 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
-// Components
+// hook and Components
 import useApi from '../../hooks/useApi';
 import CardInfo from '../../components/CardInfo/CardInfo';
 import ButtonSubmit from '../../components/Button/ButtonSubmit';
 
 // Styles and config
+import config from '../../../app.config';
 import styleInfoProduct from './InfoProductScreen.styles';
 // import data from '../../data/allDataGet';
-import config from '../../../app.config';
 
 
 const InfoProductScreen: React.FC = () => {
@@ -23,11 +23,11 @@ const InfoProductScreen: React.FC = () => {
   const newData = {
     ...data,
     logo: config.extra.logo,
-    info_text: config.extra.rootInfo
+    info_text: config.extra.infoText
   }
   
   const props = newData;
-  
+
   return (
     <View>
       {
@@ -42,7 +42,7 @@ const InfoProductScreen: React.FC = () => {
         <View style={styleInfoProduct.container} >
           <CardInfo {...props} />
           <View style={styleInfoProduct.buttonSection}>
-            <ButtonSubmit title='Editar' color='edit'/>
+            <ButtonSubmit title='Editar' color='edit' navigationRoot={config.extra.rootEditProduct} id={id}/>
             <ButtonSubmit title='Eliminar' color='deleted'/>
           </View>
         </View>

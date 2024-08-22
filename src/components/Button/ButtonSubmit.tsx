@@ -8,12 +8,12 @@ import useAppNavigation from '../../hooks/useAppNavigation';
 import styles from './ButtonSubmit.styles';
 import { ButtonSubmitProps } from '../../types/components/Button.types';
 
-const ButtonSubmit : React.FC<ButtonSubmitProps>= ({ title, color, navigationRoot, press}) => {
+const ButtonSubmit : React.FC<ButtonSubmitProps>= ({ title, color, navigationRoot, press, id}) => {
 
   const [route, setRoute] = useState('');
   const { appNavigation } = useAppNavigation();
   
-  appNavigation(route)
+  appNavigation(route, { id })
 
   const butonStyles: StyleProp<ViewStyle>[]  = [
     styles.button,
@@ -25,7 +25,7 @@ const ButtonSubmit : React.FC<ButtonSubmitProps>= ({ title, color, navigationRoo
   const actionPress = () => {
     if(press){
       press();
-    }else if(navigationRoot){
+    }if(navigationRoot){
       setRoute(navigationRoot)
     }
   };

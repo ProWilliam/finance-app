@@ -52,12 +52,17 @@ const useForm = () => {
     
   };
 
+  const setForm = (setData: FormState ) => {
+    setFormData(setData)
+  }
+
   return {
     formData,
     handleInputChange,
     handleSubmit,
     resetForm,
     error,
+    setForm
   };
 };
 

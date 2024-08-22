@@ -7,6 +7,7 @@ import Header from '../components/Header/Header';
 import FinanceProductsScreen from '../screens/Products/FinanceProductsScreen';
 import InfoProductScreen from '../screens/InfoProduct/InfoProductScreen';
 import RegisterFormScreen from '../screens/RegisterForm/RegisterFormScreen'; 
+import EditProductScreen from '../screens/EditProduct/EditProductScreen';
 
 // Styles
 import styleMain from './AppNavigatior.styles';
@@ -22,6 +23,7 @@ const AppNavigatior: React.FC = () => {
         <Stack.Screen name="Home" component={FinanceProductsScreen} options={{headerShown: false}} />
         <Stack.Screen name="Info" initialParams={{id: ''}} component={InfoProductScreen} options={{headerShown: false}} /> 
         <Stack.Screen name="AddProduct" component={RegisterFormScreen} options={{headerShown: false}} /> 
+        <Stack.Screen name="EditProduct" component={EditProductScreen} options={{headerShown: false}} />
       </Stack.Navigator>
     </View>
   )

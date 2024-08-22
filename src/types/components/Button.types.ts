@@ -3,4 +3,5 @@ export interface ButtonSubmitProps {
   color: string;
   navigationRoot?: string;
   press?: () => void;
+  id?: string | undefined;
 }

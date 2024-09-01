@@ -13,7 +13,7 @@ const useAppNavigation = () => {
     const resetToHome = StackActions.replace('Home', params);
     const resetToInfo = StackActions.replace('Info', params);
     const resetToAddProduct = StackActions.replace('AddProduct', params);
-    const resetToEditProdct = StackActions.replace('EditProduct', params)
+    const resetToEditProduct = StackActions.replace('EditProduct', params)
 
     useEffect(() => {
       if(route.includes('home')) {
@@ -26,7 +26,7 @@ const useAppNavigation = () => {
         navigation.dispatch(resetToAddProduct);
 
       }else if(route.includes('editProduct')) {
-        navigation.dispatch(resetToEditProdct)
+        navigation.dispatch(resetToEditProduct)
       }
 
       // Reset state route.

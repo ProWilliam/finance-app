@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`apiclient Should perform a Get request and return data 1`] = `
+{
+  "data": [
+    {
+      "date_release": "2025-03-02",
+      "date_revision": "2026-08-15",
+      "description": "Descripcion registrada del producto",
+      "id": "1",
+      "info_text": "Informacion extra",
+      "logo": "https://www.visa.com.ec/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Tarjetas/visa-signature-400x225.jpg",
+      "name": "Cart black",
+    },
+  ],
+}
+`;
+
+exports[`apiclient Should perform a POST request with body 1`] = `
+{
+  "success": true,
+}
+`;
+
+exports[`apiclient Should perform a PUT request with body 1`] = `
+{
+  "date_release": "2025-01-01",
+  "date_revision": "2025-01-01",
+  "description": "Updated Description",
+  "id": "1",
+  "logo": "updated-logo.png",
+  "name": "Updated Product",
+}
+`;
+
+exports[`apiclient Should send a DELETE method with id 1`] = `
+{
+  "success": true,
+}
+`;

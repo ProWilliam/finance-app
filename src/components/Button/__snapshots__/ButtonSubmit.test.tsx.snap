@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonSubmit /> renders correctly with title 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#eaeaea",
+      "borderRadius": 10,
+      "height": 60,
+      "justifyContent": "center",
+      "marginVertical": 10,
+      "opacity": 1,
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+      "width": "80%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#1E2126",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "padding": 10,
+      }
+    }
+  >
+    Submit
+  </Text>
+</View>
+`;
+
+exports[`<ButtonSubmit /> should apply the correct styles based on color prop 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFDD00",
+      "borderRadius": 10,
+      "height": 60,
+      "justifyContent": "center",
+      "marginVertical": 10,
+      "opacity": 1,
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+      "width": "80%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#1E2126",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "padding": 10,
+      }
+    }
+  >
+    Submit
+  </Text>
+</View>
+`;
+
+exports[`<ButtonSubmit /> should apply the correct styles based on color prop 2`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#eaeaea",
+      "borderRadius": 10,
+      "height": 60,
+      "justifyContent": "center",
+      "marginVertical": 10,
+      "opacity": 1,
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+      "width": "80%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#1E2126",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "padding": 10,
+      }
+    }
+  >
+    Edit
+  </Text>
+</View>
+`;
+
+exports[`<ButtonSubmit /> should apply the correct styles based on color prop 3`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#F70000",
+      "borderRadius": 10,
+      "height": 60,
+      "justifyContent": "center",
+      "marginVertical": 10,
+      "opacity": 1,
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+      "width": "80%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#1E2126",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "padding": 10,
+      }
+    }
+  >
+    Delete
+  </Text>
+</View>
+`;

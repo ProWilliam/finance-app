@@ -13,27 +13,42 @@ jest.mock('../../hooks/useAppNavigation', () => ({
 
 describe('<ButtonSubmit />', () => {
   it('renders correctly with title', () => {
-    const component = renderer.create(<ButtonSubmit title="Submit" />);
+    const component = renderer.create(<ButtonSubmit title="Submit" color="edit" />);
     let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should apply the correct styles based on color prop', () => {
+    let tree = renderer.create(<ButtonSubmit title="Submit" color="send" />).toJSON();
+    expect(tree).toMatchSnapshot();
+
+    tree = renderer.create(<ButtonSubmit title="Edit" color="edit" />).toJSON();
+    expect(tree).toMatchSnapshot();
+
+    tree = renderer.create(<ButtonSubmit title="Delete" color="deleted" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('calls press function when provided', () => {
     const onPressMock = jest.fn();
-    const component = renderer.create(<ButtonSubmit title="Submit" press={onPressMock} />);
+    const component = renderer.create(<ButtonSubmit title="Submit" color="edit" press={onPressMock} />);
+
     act(() => {
       component.root.findByType(TouchableOpacity).props.onPress();
     });
+    
     expect(onPressMock).toHaveBeenCalled();
   });
 
   it('navigates to specified route when navigationRoot prop is provided', () => {
-    const component = renderer.create(<ButtonSubmit title="Submit" navigationRoot="Home" />);
+    const component = renderer.create(<ButtonSubmit title="Submit" color="edit" navigationRoot="Home" />);
     const touchable = component.root.findByType(TouchableOpacity);
+
     act(() => {
       touchable.props.onPress();
     });
-    expect(component.root.findByType('Text').props.children).toBe('Submit');
+
+    expect(component.root.findByType(Text).props.children).toBe('Submit');
   });
 
 });

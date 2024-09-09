@@ -45,7 +45,7 @@ const InputDate: React.FC<DateProps> = ({ title, keyValue, onChangeForm, value }
         <input
           style={styles.inputWeb}
           type="date"
-          value={dateWeb}
+          value={value ? value : dateWeb}
           onChange={onDateWeb}
         />
       )}

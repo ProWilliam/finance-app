@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputForm /> renders correctly with TextInput 1`] = `
+<View
+  style={
+    {
+      "marginBottom": 5,
+    }
+  }
+>
+  <TextInput
+    blurOnSubmit={true}
+    keyboardType="numeric"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    placeholder="Numero de ID"
+    placeholderTextColor="#6a6a6a"
+    style={
+      [
+        {
+          "borderRadius": 5,
+          "borderWidth": 1,
+          "fontSize": 24,
+          "height": 50,
+          "paddingLeft": 20,
+          "width": "100%",
+        },
+        {
+          "borderColor": "#F70000",
+        },
+      ]
+    }
+    testID="error-message"
+    value="1"
+  />
+  <Text
+    style={
+      {
+        "color": "#F70000",
+        "fontSize": 14,
+        "marginTop": 5,
+      }
+    }
+    testID="error-message"
+  >
+    Campo obligatorio
+  </Text>
+</View>
+`;

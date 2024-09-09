@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemFinancialProduct /> renders correctly with given props 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignContent": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "opacity": 1,
+      "padding": 9,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "fontSize": 14,
+          "marginBottom": 2,
+        }
+      }
+    >
+      Product Name
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#6a6a6a",
+          "fontSize": 14,
+        }
+      }
+    >
+      ID:
+      123
+    </Text>
+  </View>
+  <RNSVGSvgView
+    align="xMidYMid"
+    aria-hidden="true"
+    bbHeight={25}
+    bbWidth={25}
+    fill="none"
+    focusable={false}
+    height={25}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#eaeaea",
+          "fontSize": 35,
+          "marginTop": 5,
+        },
+        {
+          "flex": 0,
+          "height": 25,
+          "width": 25,
+        },
+      ]
+    }
+    tintColor="#eaeaea"
+    vbHeight={24}
+    vbWidth={24}
+    width={25}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      font={
+        {
+          "fontSize": 35,
+        }
+      }
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGPath
+        d="m9 5 7 7-7 7"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        propList={
+          [
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;

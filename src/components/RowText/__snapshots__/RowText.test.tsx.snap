@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RowText /> renders with dynamic content 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="title-text"
+  >
+    First Title
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="content-text"
+  >
+    First Content
+  </Text>
+</View>
+`;
+
+exports[`<RowText /> renders with dynamic content 2`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="title-text"
+  >
+    Second Title
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="content-text"
+  >
+    Second Content
+  </Text>
+</View>
+`;
+
+exports[`<RowText /> renders with title and children 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="title-text"
+  >
+    Title Text
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="content-text"
+  >
+    Content Text
+  </Text>
+</View>
+`;
+
+exports[`<RowText /> renders without crashing with empty title and children 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="title-text"
+  />
+  <Text
+    style={
+      {
+        "color": "#6a6a6a",
+        "fontSize": 14,
+      }
+    }
+    testID="content-text"
+  />
+</View>
+`;

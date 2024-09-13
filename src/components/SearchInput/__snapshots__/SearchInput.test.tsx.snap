@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchInput /> renders SearchInput component correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "margin": 40,
+      "paddingVertical": 10,
+      "width": "80%",
+    }
+  }
+>
+  <TextInput
+    keyboardType="number-pad"
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Search..."
+    placeholderTextColor="black"
+    returnKeyType="done"
+    style={
+      {
+        "borderColor": "#eaeaea",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "fontSize": 16,
+        "height": 60,
+        "overflow": "hidden",
+        "paddingHorizontal": 20,
+        "width": "100%",
+      }
+    }
+    value=""
+  />
+</View>
+`;

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppNavigatior /> should render correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flexGrow": 1,
+      "marginTop": 54,
+    }
+  }
+>
+  <Header />
+  <RNCSafeAreaProvider
+    onInsetsChange={[Function]}
+    style={
+      [
+        {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSScreenStack
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <RNSScreen
+        collapsable={false}
+        gestureResponseDistance={
+          {
+            "bottom": -1,
+            "end": -1,
+            "start": -1,
+            "top": -1,
+          }
+        }
+        hasLargeHeader={false}
+        nativeBackButtonDismissalEnabled={false}
+        onAppear={[Function]}
+        onDisappear={[Function]}
+        onDismissed={[Function]}
+        onGestureCancel={[Function]}
+        onHeaderBackButtonClicked={[Function]}
+        onNativeDismissCancelled={[Function]}
+        onTransitionProgress={[Function]}
+        onWillAppear={[Function]}
+        onWillDisappear={[Function]}
+        replaceAnimation="push"
+        sheetAllowedDetents="large"
+        sheetCornerRadius={-1}
+        sheetExpandsWhenScrolledToEdge={true}
+        sheetGrabberVisible={false}
+        sheetLargestUndimmedDetent="all"
+        stackPresentation="push"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        swipeDirection="horizontal"
+      >
+        <View
+          accessibilityElementsHidden={false}
+          importantForAccessibility="auto"
+          style={
+            {
+              "flex": 1,
+              "flexDirection": "column-reverse",
+            }
+          }
+        >
+          <View
+            collapsable={false}
+            style={
+              [
+                {
+                  "flex": 1,
+                },
+                {
+                  "backgroundColor": "rgb(242, 242, 242)",
+                },
+                undefined,
+              ]
+            }
+          >
+            <FinanceProductsScreen
+              navigation={
+                {
+                  "addListener": [Function],
+                  "canGoBack": [Function],
+                  "dispatch": [Function],
+                  "getId": [Function],
+                  "getParent": [Function],
+                  "getState": [Function],
+                  "goBack": [Function],
+                  "isFocused": [Function],
+                  "navigate": [Function],
+                  "pop": [Function],
+                  "popToTop": [Function],
+                  "push": [Function],
+                  "removeListener": [Function],
+                  "replace": [Function],
+                  "reset": [Function],
+                  "setOptions": [Function],
+                  "setParams": [Function],
+                }
+              }
+              route={
+                {
+                  "key": "Home-xZ8fA8zF-GLWICFPzhX0P",
+                  "name": "Home",
+                  "params": undefined,
+                }
+              }
+            />
+          </View>
+        </View>
+        <RNSScreenStackHeaderConfig
+          backButtonInCustomView={false}
+          backTitleVisible={true}
+          backgroundColor="rgb(255, 255, 255)"
+          color="rgb(0, 122, 255)"
+          direction="ltr"
+          disableBackButtonMenu={false}
+          hidden={true}
+          hideBackButton={false}
+          largeTitleHideShadow={false}
+          title="Home"
+          titleColor="rgb(28, 28, 30)"
+          topInsetEnabled={false}
+          translucent={false}
+        />
+      </RNSScreen>
+    </RNSScreenStack>
+  </RNCSafeAreaProvider>
+</View>
+`;

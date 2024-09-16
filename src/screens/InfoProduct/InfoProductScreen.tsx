@@ -42,7 +42,7 @@ const InfoProductScreen: React.FC = () => {
   }
 
   return (
-    <View>
+    <View style={styleInfoProduct.body}>
       {
         loading
         ? 

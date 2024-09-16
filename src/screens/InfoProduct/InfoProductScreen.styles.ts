@@ -1,15 +1,24 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import theme from '../../theme/theme';
+import {DimecionsScreenPlataforms} from '../../utils/DimencionsScreenPlataform';
 
 const StyleInfoProductScreen =  StyleSheet.create({
-  container: {
-    height: '100%',
+  body: {
+    height: "100%",
     alignItems: "center",
     backgroundColor: theme.light.primary,
   },
+  container: {
+    flex: 1,
+    width: `${DimecionsScreenPlataforms()}%`,
+    height: "100%",
+    alignItems: "center",
+    backgroundColor: theme.light.primary,
+    justifyContent: "space-between",
+  },
   buttonSection: {
     width: `${theme.withScreen.big}%`,
-    marginTop: 80,
+    marginBottom: 80,
     alignItems: "center",
   }
 });

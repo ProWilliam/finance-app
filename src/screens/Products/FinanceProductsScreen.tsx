@@ -27,14 +27,16 @@ const FinanceProducts: React.FC = () => {
   }, [data, setProducts]);
 
   return (
-    <View style={stylesHome.container}>
-      <SearchInput placeholder='Search...' />
-      {
-        loading
-        ? <Text>Loading...</Text>
-        : <ListFinancialProduct />
-      }
-      <ButtonSubmit title='Agregar' color='send' navigationRoot={config.extra.rootAddProduct}/>
+    <View style={stylesHome.body}>
+      <View style={stylesHome.container}>
+        <SearchInput placeholder='Search...' />
+        {
+          loading
+          ? <Text>Loading...</Text>
+          : <ListFinancialProduct />
+        }
+        <ButtonSubmit title='Agregar' color='send' navigationRoot={config.extra.rootAddProduct}/>
+      </View>
     </View>
   )
 }

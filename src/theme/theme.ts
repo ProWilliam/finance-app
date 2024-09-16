@@ -52,6 +52,9 @@ const  theme = {
     little: 60,
     medium: 80,
     big: 100,
+  },
+  Plataform: {
+    webWith: 50
   }
 }
 

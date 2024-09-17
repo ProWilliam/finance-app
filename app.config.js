@@ -1,6 +1,6 @@
 export default {
   extra: {
-    apiUrl: 'http://192.168.0.17:3002/',
+    apiUrl: 'http://192.168.1.7:3002/',
     productUrl: 'bp/products/',
     rootHome: 'home',
     rootInfo: 'info',

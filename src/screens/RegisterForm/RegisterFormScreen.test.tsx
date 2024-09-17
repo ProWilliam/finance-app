@@ -9,6 +9,12 @@ import AddProduct from '../../components/AddProduct/AddProduct';
 
 // Mock de dependencias
 jest.mock('../../hooks/useForm');
+jest.mock('../../hooks/useAppNavigation', () => ({
+  __esModule: true,
+  default: () => ({
+    appNavigation: jest.fn(),
+  }),
+}));
 jest.mock('@react-navigation/native', () => ({
   useNavigation: jest.fn(),
 }));

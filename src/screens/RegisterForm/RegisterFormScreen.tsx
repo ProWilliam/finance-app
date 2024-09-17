@@ -4,10 +4,9 @@ import { useNavigation } from '@react-navigation/native';
 
 // Hook and components
 import useForm from '../../hooks/useForm';
-import useAppNavigation from '../../hooks/useAppNavigation';
 import AddProduct from '../../components/AddProduct/AddProduct';
 import ButtonSubmit from '../../components/Button/ButtonSubmit';
-import IconClose from '../../assets/icons/IconClose';
+import GoBackButton from '../../components/GoBackButton/GoBackButton';
 
 // Styles
 import style from './RegisterForm.styles';
@@ -15,17 +14,8 @@ import style from './RegisterForm.styles';
 
 const RegisterFormScreen: React.FC = () => {
 
-  const [route, setRoute] = useState('');
-  const { appNavigation } = useAppNavigation();
-
-  appNavigation(route)
-
   const { formData, handleInputChange, handleSubmit, error, resetForm } = useForm();
   const navigation = useNavigation();
-
-  const goBack = () => {
-    setRoute('home');
-  }
 
   const submit = async () => {
 
@@ -47,11 +37,7 @@ const RegisterFormScreen: React.FC = () => {
           <Text style={style.title}>
             Registro de Productos
           </Text>
-          <TouchableOpacity
-            onPress={goBack}
-          >
-            <IconClose style={style.iconCard}/>
-          </TouchableOpacity>
+          <GoBackButton />
         </View>
         <ScrollView style={style.scroll}>
           <AddProduct title='ID' placeHolder='Numero de ID' keySelect={'id'} onChange={handleInputChange} type='numeric' value={formData.id} />

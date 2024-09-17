@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet } from 'react-native';
 import theme from '../../theme/theme';
 import { DimecionsScreenPlataforms } from '../../utils/DimencionsScreenPlataform';
 
@@ -18,10 +18,6 @@ const RegisterFormStyle =  StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-  },
-  iconCard: {
-    marginLeft: Platform.OS === 'web' ? 200 : 0,
-    color: theme.light.tertiary
   },
   title: {
     fontSize: theme.size.fontMedium

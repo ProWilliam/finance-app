@@ -116,7 +116,7 @@ exports[`<AppNavigatior /> should render correctly 1`] = `
               }
               route={
                 {
-                  "key": "Home-xZ8fA8zF-GLWICFPzhX0P",
+                  "key": "Home-pNuZnI2TAyr_E7J_G_MEx",
                   "name": "Home",
                   "params": undefined,
                 }
